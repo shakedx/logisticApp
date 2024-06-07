@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <com.yandex.mapkit.mapview.MapView
+                android:id="@+id/mapview"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Точка загрузки"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextPickupLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="Введите точку загрузки" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Точка разгрузки"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextDeliveryLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="Введите точку разгрузки" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Информация о товаре"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextInfProduct"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:enabled="false"
+                android:gravity="start|top"
+                android:hint="Введите информацию о товаре"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Статус"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="status" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
